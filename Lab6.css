@@ -1,0 +1,86 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('p1.jpg') center/cover no-repeat;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: url('p2.jpg') center/cover no-repeat;
+    border: 3px solid #fff;
+}
+
+.text {
+    max-width: 500px;
+    font-size: 1.2em;
+}
+
+/* Контейнер для кнопки и списка ссылок */
+.footer-section {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    background-color: rosybrown;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Скрытый список ссылок */
+.link-list {
+    display: none; /* Скрыт по умолчанию */
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+/* Стиль для ссылок */
+.link-list li {
+    margin: 5px 0;
+}
+
+.link-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.link-list a:hover {
+    text-decoration: underline;
+}

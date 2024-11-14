@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FELICITY</title>
+    <link rel="stylesheet" href="Lab6.css">
+</head>
+<body>
+
+    <div class="background"></div>
+    <div class="content">
+        <div class="profile-pic"></div>
+        <div class="text">
+            <h1>Команда FELICITY</h1>
+            <p>
+                FELICITY - это Cover Dance команда из Гродно.<br>
+                <br>Что такое Cover Dance?<br>
+                Cover Dance – это повтор танца, который был показан в клипах или на концертах известных танцевальных коллективов. При этом передача пластики и техники, особенностей хореографии должна быть максимально приближена к оригинальному варианту.<br>
+                <br>Хотите стать частью нашей команды?<br>
+                Тогда ждем вас в наших социальных сетях!
+            </p>
+        </div>
+    </div>
+    
+    <div class="footer-section">
+        <button class="toggle-button" onclick="toggleLinks()">Связаться с нами</button>
+        <ul class="link-list" id="linkList">
+            <li><a href="https://www.instagram.com/felicity__group?igsh=MWFrZ2c0cWVhMHJhaw==" target="_blank">Inctagram</a></li>
+            <li><a href="https://www.tiktok.com/@felicity_group?_t=8rMt1dfkvt2&_r=1" target="_blank">TikTok</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleLinks() {
+            const linkList = document.getElementById('linkList');
+            if (linkList.style.display === 'none' || linkList.style.display === '') {
+                linkList.style.display = 'block'; // Показываем список
+            } else {
+                linkList.style.display = 'none'; // Скрываем список
+            }
+        }
+    </script>
+
+</body>
+</html>
