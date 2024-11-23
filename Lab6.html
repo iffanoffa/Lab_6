@@ -7,38 +7,69 @@
     <link rel="stylesheet" href="Lab6.css">
 </head>
 <body>
+   
+    <header class="header">
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#achievements">Наши достижения</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="background"></div>
-    <div class="content">
-        <div class="profile-pic"></div>
-        <div class="text">
-            <h1>Команда FELICITY</h1>
-            <p>
-                FELICITY - это Cover Dance команда из Гродно.<br>
-                <br>Что такое Cover Dance?<br>
-                Cover Dance – это повтор танца, который был показан в клипах или на концертах известных танцевальных коллективов. При этом передача пластики и техники, особенностей хореографии должна быть максимально приближена к оригинальному варианту.<br>
-                <br>Хотите стать частью нашей команды?<br>
-                Тогда ждем вас в наших социальных сетях!
-            </p>
+    <section id="about" class="section-about">
+        <div class="background"></div>
+        <div class="content">
+            <div class="profile-pic"></div>
+            <div class="text">
+                <h1>Команда FELICITY</h1>
+                <p>
+                    FELICITY - это Cover Dance команда из Гродно.<br>
+                    <br>Что такое Cover Dance?<br>
+                    Cover Dance – это повтор танца, который был показан в клипах или на концертах известных танцевальных коллективов. При этом передача пластики и техники, особенностей хореографии должна быть максимально приближена к оригинальному варианту.<br>
+                    <br>Хотите стать частью нашей команды?<br>
+                    Тогда ждем вас в наших социальных сетях!
+                </p>
+            </div>
         </div>
-    </div>
-    
-    <div class="footer-section">
-        <button class="toggle-button" onclick="toggleLinks()">Связаться с нами</button>
-        <ul class="link-list" id="linkList">
-            <li><a href="https://www.instagram.com/felicity__group?igsh=MWFrZ2c0cWVhMHJhaw==" target="_blank">Inctagram</a></li>
-            <li><a href="https://www.tiktok.com/@felicity_group?_t=8rMt1dfkvt2&_r=1" target="_blank">TikTok</a></li>
-        </ul>
-    </div>
+    </section>
+
+    <section id="achievements" class="section-achievements">
+        <h2>Наши достижения</h2>
+        <div class="achievements-container">
+            <div class="achievement-card">
+                <img src="p4.jpg" alt="Иконка достижения 1" class="achievement-icon">
+                <h3>Выступления на больших сценах</h3>
+                <p>Мы гордимся нашими выступлениями на престижных сценах, где каждый танец становится незабываемым шоу. FELICITY привлекает внимание не только зрителей, но и профессионалов танцевального мира.</p>
+            </div>
+            <div class="achievement-card">
+                <img src="p3.jpg" alt="Иконка достижения 2" class="achievement-icon">
+                <h3>Победы в соревнованиях</h3>
+                <p>Соревнования вдохновляют нас становиться лучше. Наши награды и победы — результат упорной работы, сплочённости команды и безграничной любви к танцам.</p>
+            </div>
+            <div class="achievement-card">
+                <img src="p5.jpg" alt="Иконка достижения 3" class="achievement-icon">
+                <h3>Тщательная проработка костюмов</h3>
+                <p>Костюмы — важная часть нашей команды. Каждая деталь тщательно продумана, чтобы подчеркнуть стиль и энергетику выступления, делая наши номера максимально выразительными.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="footer-section">
+        <div class="button-container">
+            <button class="toggle-button" onclick="toggleLinks()">Связаться с нами</button>
+            <ul class="link-list" id="linkList">
+                <li><a href="https://www.instagram.com/felicity__group?igsh=MWFrZ2c0cWVhMHJhaw==" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@felicity_group?_t=8rMt1dfkvt2&_r=1" target="_blank">TikTok</a></li>
+            </ul>
+        </div>
+    </section>
 
     <script>
         function toggleLinks() {
             const linkList = document.getElementById('linkList');
-            if (linkList.style.display === 'none' || linkList.style.display === '') {
-                linkList.style.display = 'block'; // Показываем список
-            } else {
-                linkList.style.display = 'none'; // Скрываем список
-            }
+            linkList.style.display = linkList.style.display === 'none' || linkList.style.display === '' ? 'block' : 'none';
         }
     </script>
 
