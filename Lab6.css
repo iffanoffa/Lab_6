@@ -9,6 +9,7 @@ body, html {
 
 h1 {
     font-size: 40px;
+    text-align: center;
 }
 
 .header {
@@ -95,6 +96,25 @@ h1 {
         color: #f0f0f0;
     }
 
+@media (max-width: 768px) {
+    .profile-pic {
+        display: none;
+    }
+
+    .text {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
 .achievements-container {
     display: flex;
     justify-content: space-around;
@@ -113,7 +133,7 @@ h1 {
 
 .achievement-icon {
     width: 300px;
-    hight: 300px;
+    height: 300px;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -168,3 +188,62 @@ h1 {
         .link-list li a:hover {
             color: rosybrown;
         }
+
+body {
+    background: linear-gradient(135deg, #876C99, #735184); 
+    font-family: 'Arial', sans-serif;
+}
+
+.dance-styles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px; 
+    padding: 40px; 
+}
+
+.dance-style {
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 20px; 
+    padding: 20px; 
+    text-align: center; 
+    color: black;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+    .dance-style:hover {
+        transform: translateY(-10px); /* Подъем блока при наведении */
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Увеличение тени при наведении */
+    }
+
+.style-icon {
+    font-size: 50px; 
+    margin-bottom: 10px; 
+}
+
+.dance-style::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 204, 0, 0.1), transparent);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
