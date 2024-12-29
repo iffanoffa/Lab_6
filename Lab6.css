@@ -190,37 +190,37 @@ h1 {
         }
 
 body {
-    background: linear-gradient(135deg, #876C99, #735184); 
+    background: linear-gradient(135deg, #876C99, #735184);
     font-family: 'Arial', sans-serif;
 }
 
 .dance-styles {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px; 
-    padding: 40px; 
+    gap: 30px;
+    padding: 40px;
 }
 
 .dance-style {
-    background: rgba(255, 255, 255, 0.8); 
-    border-radius: 20px; 
-    padding: 20px; 
-    text-align: center; 
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
     color: black;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
-    transition: transform 0.3s, box-shadow 0.3s; 
-    position: relative; 
-    overflow: hidden; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
 }
 
     .dance-style:hover {
-        transform: translateY(-10px); /* Подъем блока при наведении */
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Увеличение тени при наведении */
+        transform: translateY(-10px);  Подъем блока при наведении 
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);  Увеличение тени при наведении 
     }
 
 .style-icon {
-    font-size: 50px; 
-    margin-bottom: 10px; 
+    font-size: 50px;
+    margin-bottom: 10px;
 }
 
 .dance-style::before {
@@ -246,4 +246,42 @@ body {
     100% {
         transform: scale(1);
     }
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+    .feedback-form label {
+        font-weight: bold;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea,
+    .feedback-form button {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .feedback-form button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+        .feedback-form button:hover {
+            background-color: #0056b3;
+        }
+
+.button-container {
+    margin-top: 20px;
+    position: relative;
+    top: 1cm;
 }

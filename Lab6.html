@@ -81,15 +81,28 @@
     </div>
 
     <section id="contacts" class="footer-section">
+        <h2>Свяжитесь с нами</h2>
+        <form action="#" method="POST" class="feedback-form">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Ваше сообщение:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
         <div class="button-container">
-            <button class="toggle-button" onclick="toggleLinks()">Связаться с нами</button>
+            <button class="toggle-button" onclick="toggleLinks()">Наши социальные сети</button>
             <ul class="link-list" id="linkList">
                 <li><a href="https://www.instagram.com/felicity__group?igsh=MWFrZ2c0cWVhMHJhaw==" target="_blank">Instagram</a></li>
                 <li><a href="https://www.tiktok.com/@felicity_group?_t=8rMt1dfkvt2&_r=1" target="_blank">TikTok</a></li>
             </ul>
         </div>
     </section>
-
+    
     <script>
         function toggleLinks() {
             const linkList = document.getElementById('linkList');
